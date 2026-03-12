@@ -2,7 +2,7 @@ const TOKEN = "8788345094:AAGOxd3V-80F5Th992cF69HNWUjMPg4OLa4";
 const CHAT_ID = "7705748477";
 
 const WHATSAPP_GROUP = "https://chat.whatsapp.com/FhLWWkQgmlXLK5Y5GstoeA";
-const DISCORD_SERVER = "https://discord.gg/YOUR_DISCORD_LINK";
+const DISCORD_SERVER = "https://discord.gg/229XR2wY";
 
 document.getElementById("registerForm").addEventListener("submit", async function(e){
 
