@@ -1,21 +1,39 @@
 body{
-background:#000;
+background:#0b0b0b;
 color:white;
-text-align:center;
 font-family:Arial;
+text-align:center;
+}
+
+h2{
+color:#00ffc3;
 }
 
 table{
-margin:auto;
-border-collapse:collapse;
 width:70%;
+margin:20px auto;
+border-collapse:collapse;
+background:#111;
 }
 
 th,td{
-border:1px solid #00ffc3;
-padding:10px;
+padding:12px;
+border:1px solid #333;
 }
 
 th{
-background:#111;
+background:#00ffc3;
+color:black;
+}
+
+.team{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.team img{
+width:35px;
+height:35px;
+border-radius:50%;
 }
