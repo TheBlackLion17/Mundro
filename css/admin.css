@@ -1,0 +1,14 @@
+body{
+background:#111;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+button{
+background:red;
+color:white;
+padding:10px;
+border:none;
+cursor:pointer;
+}

@@ -1,0 +1,17 @@
+body{
+background:#050505;
+color:white;
+font-family:Arial;
+text-align:center;
+}
+
+table{
+margin:auto;
+border-collapse:collapse;
+width:70%;
+}
+
+th,td{
+padding:10px;
+border:1px solid white;
+}

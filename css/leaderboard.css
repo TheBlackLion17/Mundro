@@ -1,0 +1,118 @@
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:#0b0b0b;
+color:white;
+text-align:center;
+}
+
+/* Title */
+
+h2{
+margin-top:40px;
+color:#00ffc3;
+letter-spacing:2px;
+}
+
+/* Leaderboard container */
+
+.leaderboard{
+width:60%;
+margin:40px auto;
+background:#111;
+border-radius:10px;
+padding:20px;
+box-shadow:0 0 20px #00ffc3;
+}
+
+/* List */
+
+.leaderboard ol{
+list-style:none;
+padding:0;
+margin:0;
+}
+
+/* Each player */
+
+.leaderboard li{
+display:flex;
+align-items:center;
+justify-content:space-between;
+background:#1a1a1a;
+padding:12px 20px;
+margin:10px 0;
+border-radius:6px;
+font-size:18px;
+transition:0.3s;
+}
+
+/* Hover effect */
+
+.leaderboard li:hover{
+transform:scale(1.03);
+background:#222;
+}
+
+/* Rank number */
+
+.rank{
+font-weight:bold;
+color:#00ffc3;
+}
+
+/* Team name */
+
+.team{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+/* Team logo */
+
+.team img{
+width:35px;
+height:35px;
+border-radius:50%;
+border:2px solid #00ffc3;
+}
+
+/* Points */
+
+.points{
+font-weight:bold;
+}
+
+/* Top 3 highlight */
+
+.leaderboard li:nth-child(1){
+background:#4b3f00;
+}
+
+.leaderboard li:nth-child(2){
+background:#333;
+}
+
+.leaderboard li:nth-child(3){
+background:#3d2500;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.leaderboard{
+width:90%;
+}
+
+.leaderboard li{
+font-size:14px;
+}
+
+.team img{
+width:25px;
+height:25px;
+}
+
+}
