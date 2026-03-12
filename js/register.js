@@ -1,10 +1,10 @@
 const TOKEN = "8788345094:AAGOxd3V-80F5Th992cF69HNWUjMPg4OLa4";
 const CHAT_ID = "7705748477";
 
-const WHATSAPP_GROUP = "https://chat.whatsapp.com/FhLWWkQgmlXLK5Y5GstoeA?mode=gi_t";
-const DISCORD_SERVER = "https://discord.gg/229XR2wY";
+const WHATSAPP_GROUP = "https://chat.whatsapp.com/FhLWWkQgmlXLK5Y5GstoeA";
+const DISCORD_SERVER = "https://discord.gg/YOUR_DISCORD_LINK";
 
-document.getElementById("registerForm").addEventListener("submit", function(e){
+document.getElementById("registerForm").addEventListener("submit", async function(e){
 
 e.preventDefault();
 
@@ -20,8 +20,9 @@ let message =
 "🎮 PES Username: "+username+"\n"+
 "📱 Contact: "+phone;
 
-// Send to Telegram
-fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`,{
+try{
+
+await fetch(`https://api.telegram.org/bot${TOKEN}/sendMessage`,{
 method:"POST",
 headers:{
 "Content-Type":"application/json"
@@ -32,7 +33,6 @@ text:message
 })
 });
 
-// Open WhatsApp group
 alert("✅ Registration Successful! Join WhatsApp & Discord.");
 
 // Open WhatsApp
@@ -45,5 +45,6 @@ window.open(DISCORD_SERVER,"_blank");
 
 alert("❌ Error sending registration. Try again.");
 
+}
 
 });
