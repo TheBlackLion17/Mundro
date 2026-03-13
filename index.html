@@ -1,67 +1,108 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>MUNDRO PES CHAMPIONSHIP</title>
+<title>PES Tournament</title>
 <link rel="stylesheet" href="css/home.css">
 </head>
 
 <body>
 
 <header>
-<h1>  MUNDRO PES CHAMPIONSHIP</h1>
+
+<div class="logo">
+  <img src="image/logo.png">
+  <h2>PES LEAGUE</h2>
+</div>
 
 <nav>
-<a href="index.html">Home</a>
-<a href="register.html">Register</a>
-<a href="fixtures.html">Fixtures</a>
-<a href="points.html">Points</a>
-<a href="leaderboard.html">Leaderboard</a>
-<a href="final1.html">Final</a>
+  <a href="index.html">Home</a>
+  <a href="live.html">Live Now</a>
+  <a href="table.html">Table</a>
+  <a href="team.html">Teams</a>
+  <a href="fixtures.html">Fixtures</a>
+  <!-- Admin Login Button -->
+  <button class="admin-btn" onclick="goToLogin()">Admin Login</button>
 </nav>
+
 </header>
+
 
 <section class="hero">
 
-<h2>Ultimate PES Mobile Tournament</h2>
-<p>Compete and become the champion.</p>
+<div class="hero-overlay">
 
-<a href="register.html" class="btn">JOIN NOW</a>
+<div class="hero-text">
+
+<h1>PES TOURNAMENT 2026</h1>
+<p>Ultimate eFootball Competition</p>
+
+<a href="register.html">
+<button class="join-btn">JOIN TOURNAMENT</button>
+</a>
+
+</div>
+
+</div>
 
 </section>
 
-<section class="teams">
 
-<h2>Featured Teams</h2>
+<section class="matches">
 
-<div class="team-grid">
+<h2>Upcoming Matches</h2>
 
-<div class="team">
-<img src="image/Team1.png">
-<h3>Black Titian</h3>
+<div class="match-container">
+
+<div class="match-card">
+
+<div class="teams">
+<img src="image/team1.png">
+<span>VS</span>
+<img src="image/team2.png">
 </div>
 
-<div class="team">
-<img src="image/Team2.png">
-<h3>Sadaoui</h3>
-</div>
-
-<div class="team">
-<img src="image/Team3.png">
-<h3>Mulachandra United</h3>
-</div>
-
-<div class="team">
-<img src="image/Team4.png">
-<h3>Island FA</h3>
-</div>
-
-<div class="team">
-<img src="image/Team5.jpg">
-<h3>Neon FC</h3>
-</div>
+<p>Team Alpha vs Team Beta</p>
+<span class="time">14 Mar | 5:00 PM</span>
 
 </div>
+
+
+<div class="match-card">
+
+<div class="teams">
+<img src="image/team3.png">
+<span>VS</span>
+<img src="image/team4.png">
+</div>
+
+<p>Team Dragon vs Team Eagle</p>
+<span class="time">14 Mar | 7:30 PM</span>
+
+</div>
+
+
+<div class="match-card">
+
+<div class="teams">
+<img src="image/team1.png">
+<span>VS</span>
+<img src="image/team3.png">
+</div>
+
+<p>Team Alpha vs Team Dragon</p>
+<span class="time">15 Mar | 5:00 PM</span>
+
+</div>
+
+</div>
+
 </section>
+
+<script>
+function goToLogin() {
+  window.location.href = "login.html";
+}
+</script>
 
 </body>
 </html>

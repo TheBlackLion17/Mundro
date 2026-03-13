@@ -1,27 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Admin</title>
-<link rel="stylesheet" href="css/table.css">
+
+<title>Admin Panel</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
 </head>
 
 <body>
 
-<h2>Admin Login</h2>
+<h1>🎮 Tournament Admin Panel</h1>
 
-<input type="password" id="pass" placeholder="Enter password">
+<div class="container">
 
-<button onclick="login()">Login</button>
 
-<div id="panel" style="display:none;">
+<!-- FIXTURE SECTION -->
 
-<h3>Update Results</h3>
+<div class="card">
 
-<p>Admin panel for updating fixtures and points.</p>
+<h2>⚽ Add Fixture</h2>
+
+<label>Team 1</label>
+<select id="fixtureTeam1"></select>
+
+<label>Team 2</label>
+<select id="fixtureTeam2"></select>
+
+<label>Match Date</label>
+<input type="date" id="matchDate">
+
+<label>Match Time</label>
+<input type="text" id="matchTime" placeholder="7:30 PM">
+
+<button onclick="addFixture()">Add Fixture</button>
+
+<div id="fixtureList"></div>
 
 </div>
 
-<script src="js/script.js"></script>
+
+<!-- LIVE SCORE -->
+
+<div class="card">
+
+<h2>🔴 Live Score</h2>
+
+<label>Team 1</label>
+<select id="liveTeam1"></select>
+
+<input type="number" id="score1" placeholder="Score">
+
+<label>Team 2</label>
+<select id="liveTeam2"></select>
+
+<input type="number" id="score2" placeholder="Score">
+
+<button onclick="updateLiveScore()">Update Score</button>
+
+</div>
+
+
+<!-- POINT TABLE -->
+
+<div class="card">
+
+<h2>🏆 Points Table</h2>
+
+<label>Team</label>
+<select id="ptableTeam"></select>
+
+<input type="number" id="played" placeholder="Played">
+<input type="number" id="win" placeholder="Win">
+<input type="number" id="draw" placeholder="Draw">
+<input type="number" id="lose" placeholder="Lose">
+<input type="number" id="goal" placeholder="Goals">
+<input type="number" id="points" placeholder="Points">
+<input type="number" id="rank" placeholder="Position">
+
+<button onclick="addRow()">Add / Update</button>
+
+<button onclick="resetTable()" class="reset">Reset Table</button>
+
+<div id="tableList"></div>
+
+</div>
+
+</div>
+
+
+<script src="js/teams.js"></script>
+<script src="js/admin.js"></script>
 
 </body>
 </html>
