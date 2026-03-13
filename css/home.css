@@ -1,61 +1,154 @@
-body{
+*{
 margin:0;
+padding:0;
+box-sizing:border-box;
 font-family:Arial;
-background:#0a0a0a;
-color:white;
-text-align:center;
 }
+
+body{
+background:#08111f;
+color:white;
+}
+
+
+/* HEADER */
 
 header{
-background:#000;
-padding:20px;
-border-bottom:2px solid #00ffc3;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 60px;
+background:#0c1b2f;
 }
 
-h1{
-color:#00ffc3;
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
 }
 
 nav a{
-margin:15px;
 color:white;
 text-decoration:none;
-font-size:18px;
+margin:0 15px;
 }
 
 nav a:hover{
-color:#00ffc3;
+color:orange;
 }
+
+
+
+/* HERO FULL BANNER */
 
 .hero{
-height:60vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-background:linear-gradient(#000000aa,#000000aa),
+width:100%;
+height:450px;
+
+background-image:
+linear-gradient(to right, rgba(0,0,0,0.9), rgba(0,0,0,0.2)),
 url("../image/studeam.jpg");
+
 background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+
+display:flex;
+align-items:center;
+padding:0 8%;
 }
 
-.btn{
-background:#00ffc3;
-color:black;
-padding:12px 25px;
-text-decoration:none;
-font-weight:bold;
-border-radius:6px;
+.hero-overlay{
+max-width:600px;
 }
 
-.team-grid{
+.hero-text h1{
+font-size:52px;
+margin-bottom:15px;
+}
+
+.hero-text p{
+margin-bottom:25px;
+font-size:18px;
+}
+
+.join-btn{
+background:orange;
+border:none;
+padding:12px 28px;
+font-size:16px;
+cursor:pointer;
+border-radius:4px;
+}
+
+.join-btn:hover{
+background:#ffb733;
+}
+
+
+
+/* MATCHES */
+
+.matches{
+padding:60px 8%;
+}
+
+.matches h2{
+margin-bottom:25px;
+}
+
+.match-container{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.match-card{
+background:#0c1b2f;
+padding:25px;
+border-radius:10px;
+text-align:center;
+transition:0.3s;
+}
+
+.match-card:hover{
+background:#132844;
+transform:translateY(-5px);
+}
+
+.teams{
 display:flex;
 justify-content:center;
-gap:60px;
-flex-wrap:wrap;
-padding:70px;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
 }
 
-.team img{
-width:100px;
-border-radius:50%;
-border:3px solid #00ffc3;
+.teams img{
+width:40px;
+}
+
+.time{
+color:orange;
+font-size:14px;
+}
+
+.admin-btn {
+  padding: 6px 12px;
+  margin-left: 10px;
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.admin-btn:hover {
+  background-color: #cc0000;
 }

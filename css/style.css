@@ -1,27 +1,31 @@
-body{
-background:#0a0a0a;
-color:white;
-font-family:Arial;
+.live-card{
+
+display:flex;
+align-items:center;
+justify-content:center;
+gap:40px;
+
+background:#0c1b2f;
+padding:30px;
+margin:40px auto;
+width:500px;
+
+border-radius:10px;
+
+}
+
+.team{
 text-align:center;
 }
 
-table{
-margin:auto;
-width:80%;
-background:#111;
+.team img{
+width:60px;
 }
 
-button{
-background:#00ff88;
-border:none;
-padding:10px;
-cursor:pointer;
-}
+.score{
 
-@media(max-width:600px){
-
-table{
-width:100%;
-}
+font-size:40px;
+font-weight:bold;
+color:orange;
 
 }
